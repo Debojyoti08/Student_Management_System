@@ -1,0 +1,213 @@
+/* index.css */
+/* Reset and Base Styles */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* Student Management App Specific Styles */
+.student-app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Table Styles */
+.student-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.student-table th {
+  background-color: #1976d2;
+  color: white;
+  padding: 12px 15px;
+  text-align: left;
+  font-weight: 500;
+}
+
+.student-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.student-table tr:last-child td {
+  border-bottom: none;
+}
+
+.student-table tr:hover {
+  background-color: #f5f5f5;
+}
+
+/* Button Styles */
+.student-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.student-btn-primary {
+  background-color: #1976d2;
+  color: white;
+}
+
+.student-btn-primary:hover {
+  background-color: #1565c0;
+}
+
+.student-btn-danger {
+  background-color: #d32f2f;
+  color: white;
+}
+
+.student-btn-danger:hover {
+  background-color: #b71c1c;
+}
+
+.student-btn-sm {
+  padding: 6px 12px;
+  font-size: 13px;
+}
+
+/* Form Styles */
+.student-form {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.student-form-group {
+  margin-bottom: 1.5rem;
+}
+
+.student-form-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.student-form-control {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.student-form-control:focus {
+  outline: none;
+  border-color: #1976d2;
+  box-shadow: 0 0 0 2px rgba(25, 118, 210, 0.2);
+}
+
+/* Utility Classes */
+.student-text-center {
+  text-align: center;
+}
+
+.student-mt-3 {
+  margin-top: 1.5rem;
+}
+
+.student-mb-3 {
+  margin-bottom: 1.5rem;
+}
+
+.student-mr-2 {
+  margin-right: 0.5rem;
+}
+
+/* Alert Messages */
+.student-alert {
+  padding: 12px 16px;
+  border-radius: 4px;
+  margin-bottom: 1.5rem;
+}
+
+.student-alert-danger {
+  background-color: #ffebee;
+  color: #c62828;
+  border: 1px solid #ef9a9a;
+}
+
+.student-alert-success {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+  border: 1px solid #a5d6a7;
+}
+
+/* Loading State */
+.student-loading {
+  padding: 2rem;
+  text-align: center;
+  color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .student-app-container {
+    padding: 1rem;
+  }
+  
+  .student-table {
+    display: block;
+    overflow-x: auto;
+  }
+}
+
+/* Form Rows */
+.student-form-row {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.student-form-row .student-form-group {
+  flex: 1;
+}
+
+/* Form Actions */
+.student-form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+/* Secondary Button */
+.student-btn-secondary {
+  background-color: #757575;
+  color: white;
+}
+
+.student-btn-secondary:hover {
+  background-color: #616161;
+}
+
+/* Invalid State */
+.student-is-invalid {
+  border-color: #d32f2f !important;
+}
+
+.student-invalid-feedback {
+  color: #d32f2f;
+  font-size: 14px;
+  margin-top: 5px;
+}
